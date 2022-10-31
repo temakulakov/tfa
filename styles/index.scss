@@ -262,6 +262,19 @@ a {
   }
 }
 
+.articles {
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid white;
+  transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+  span {
+    display: inline-block;
+    transform: translateY(-3.5px);
+  }
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
 .white {
   color: black;
 }
