@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Photo = (props) => {
     return <div className={styles.root}>
-        <Image style={{height: "100%", width: "100%"}} layout="fill" src={props.img} alt={props.img} width={props.width} height={props.height}/>;
+        <Image style={{height: "100%", width: "100%"}} layout="fill" src={props.img} alt={props.img} width={props.width} height={props.height}/>
     </div>
 }
 
