@@ -216,6 +216,7 @@ a {
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));
   transform: translate3d(var(--move-initial), 0, 0);
+  color: white;
   animation: marquee 1s linear infinite;
   animation-play-state: paused;
   opacity: 0;
@@ -237,6 +238,7 @@ a {
 
 .button--atlas > span {
   display: inline-block;
+  color: white;
 }
 
 .button--atlas:hover > span {
