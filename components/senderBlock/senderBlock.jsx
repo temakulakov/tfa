@@ -13,8 +13,8 @@ const SenderBlock = () => {
                     <path d="M9.9844 12.6279L27.5907 15.0332L9.84697 16.0487L4.50706 26.6656C4.16014 27.3553 4.84811 28.1088 5.56642 27.8258L35.3192 16.1073C35.9998 15.8392 36.0372 14.8899 35.3797 14.5691L6.64118 0.548935C5.9473 0.210421 5.20227 0.907506 5.49388 1.62239L9.9844 12.6279Z" fill="#DADADA"/>
                 </g>
                 <defs>
-                    <filter id="filter0_d_33_31" x="0.414307" y="0.460938" width="39.4375" height="35.426" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <filter id="filter0_d_33_31" x="0.414307" y="0.460938" width="39.4375" height="35.426" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                         <feOffset dy="4"/>
                         <feGaussianBlur stdDeviation="2"/>
