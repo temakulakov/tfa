@@ -5,21 +5,24 @@
   max-width: 1300px;
   display: flex;
   justify-content: center;
+
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
   transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
-  width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
   .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
-    > div {
+
+    > a div {
       transform: translateY(0);
     }
-    > div:hover {
+
+    > a div:hover {
       transform: translateY(-20px);
     }
   }
@@ -40,14 +43,12 @@
     }
     .content {
       margin-top: 10px;
-      overflow: scroll;
-      > div {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      > a div {
         box-shadow: none;
       }
     }
-  }
-  .head {
-
   }
 }
 
@@ -60,12 +61,6 @@
     .head {
       padding: 0;
     }
-  }
-  .head {
-
-  }
-  .content {
-
   }
 }
 

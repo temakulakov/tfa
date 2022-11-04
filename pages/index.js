@@ -23,53 +23,26 @@ const Home = () => {
     }
   }, [more]);
   return (
-    <div
-      className={"root"}
-      style={store.modal ? { transform: "scale(0.97)" } : {}}>
-      <Head>
-        <title>Термо Фасад Алматы</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <Header />
-      <StartBlock more={more} setMore={setMore} />
-      <ProductBlock />
-      <CallBlock h2ref={h2ref} />
-      <ArticleBlock />
-      {/*<CalcBlock/>*/}
-      <SocialBlock />
-      <SenderBlock />
-      <FooterBlock />
-      <Modal>
-        <p>Закажите фасад для своего дома</p>
-        <p>Оставьте заявку и менеджер свяжется с вами в течении 10 минут</p>
-        <div className={"search"}>
-          <input type='text' name='' required='' />
-          <label>Ваше имя</label>
-        </div>
-        <div className={"search"}>
-          <input type='text' name='' required='' />
-          <label>Ваш номер</label>
-        </div>
-        <div className={"search"}>
-          <input type='text' name='' required='' />
-          <label>Ваша почта*</label>
-        </div>
-        <button className='button button--atlas'>
-          <span>Отправить</span>
-          <div
-            className='marquee'
-            aria-hidden='true'
-            style={{ background: "#0091CD" }}>
-            <div className='marquee__inner'>
-              <span>Отправить</span>
-              <span>Отправить</span>
-              <span>Отправить</span>
-              <span>Отправить</span>
-            </div>
-          </div>
-        </button>
-      </Modal>
-    </div>
+    <>
+      <div
+        className={"root"}
+        style={store.modal ? { transform: "scale(0.97)" } : {}}>
+        <Head>
+          <title>Термо Фасад Алматы</title>
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
+        <Header />
+        <StartBlock more={more} setMore={setMore} />
+        <ProductBlock />
+        <CallBlock h2ref={h2ref} />
+        <ArticleBlock />
+        {/*<CalcBlock/>*/}
+        <SocialBlock />
+        <SenderBlock />
+        <FooterBlock />
+      </div>
+      <Modal></Modal>
+    </>
   );
 };
 

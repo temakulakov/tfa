@@ -2,18 +2,15 @@ import store from "../../store/store";
 
 const Button = (props) => {
   if (props.modal) {
-    switch (props.modal) {
-      case 1:
-        return (
-          <button
-            className={`button ${props.styles}`}
-            onClick={() => {
-              store.setModal(true);
-            }}>
-            <span>{props.children}</span>
-          </button>
-        );
-    }
+    return (
+      <button
+        className={`button ${props.styles}`}
+        onClick={() => {
+          store.setModal(props.modal);
+        }}>
+        <span>{props.children}</span>
+      </button>
+    );
   } else {
     return (
       <button

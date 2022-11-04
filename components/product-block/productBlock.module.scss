@@ -1,5 +1,4 @@
 .root {
-
   text-align: center;
   width: 90vw;
   height: 32vw;
@@ -7,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1300px;
- // background-color: #7f1cdc;
+  // background-color: #7f1cdc;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -15,7 +14,7 @@
   flex-wrap: wrap;
 
   transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
-  width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
   .content {
     display: flex;
     align-items: center;
@@ -35,20 +34,19 @@
   transform: translateY(-100px);
   transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
-@keyframes text{
+@keyframes text {
   0% {
     color: rgba(255, 255, 255, 0);
     margin-bottom: -30px;
     text-shadow: none;
   }
 
-  85%{
+  85% {
     color: rgba(255, 255, 255, 0.63);
-    text-shadow: 1px 5px 3px rgba(0,0,0,0.3),
-    0px -2px 5px rgba(255,255,255,0.3);
+    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.3),
+      0px -2px 5px rgba(255, 255, 255, 0.3);
   }
 }
-
 
 @media only screen and (max-width: 466px) {
   .head {

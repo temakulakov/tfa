@@ -22,7 +22,7 @@ const CallBlock = (props) => {
             дома не выходя из дома и совершенно БЕСПЛАТНО уже сейчас!
           </p>
           <div className={styles.buttons}>
-            <Button styles={"button--narvi white"}>
+            <Button modal={1} styles={"button--narvi white"}>
               Получить полное предложение
             </Button>
           </div>
