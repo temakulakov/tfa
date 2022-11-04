@@ -1,17 +1,36 @@
 import store from "../../store/store";
 import { observer } from "mobx-react-lite";
 import Image from "next/image";
-import Carousel from "react-bootstrap/Carousel";
+import { useRef } from "react";
 
 const Modal = observer(() => {
+  const prevHandler = () => {
+    slider.current.childNodes.forEach((element, index) => {
+      index != 0 && index != 3
+        ? (element.style = "transform: translateX(0)")
+        : "";
+    });
+  };
+  const nextHandler = () => {
+    slider.current.childNodes.forEach((element, index) => {
+      index != 0 && index != 3
+        ? (element.style = "transform: translateX(-100%)")
+        : "";
+    });
+  };
+  const slider = useRef(null);
   return (
     <div
-      className={store.modal ? "modal active" : "modal"}
+      className={store.modal ? `modal active ` : "modal"}
       onClick={() => {
         store.setModal(0);
       }}>
       <div
-        className={store.modal ? "modal active content" : "modal content"}
+        className={
+          store.modal
+            ? `modal active content ${store.modal == 2 ? "card" : ""}`
+            : "modal content"
+        }
         onClick={(e) => e.stopPropagation()}>
         {store.modal == 1 ? (
           <>
@@ -48,32 +67,28 @@ const Modal = observer(() => {
         {store.modal == 2 ? (
           <>
             <div className='carusel'>
-              <Carousel>
-                <Carousel.Item>
-                  <Image
-                    style={{
-                      height: "100vw",
-                      width: "30vw",
-                      maxHeight: "500px",
-                      maxWidth: "500px",
-                      overflow: "hidden",
-                    }}
-                    src={store.data[store.number - 1].img[0]}
-                    alt={store.data[store.number - 1].title}
-                    width={200}
-                    height={200}
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <Image
-                    style={{ height: "80%", width: "100%" }}
-                    src={store.data[store.number - 1].img[1]}
-                    alt={store.data[store.number - 1].title}
-                    width={200}
-                    height={200}
-                  />
-                </Carousel.Item>
-              </Carousel>
+              <div className='card_buttons'>
+                <div className='button back' onClick={() => prevHandler()}>
+                  <div className=' button shadw'>{"<"}</div>
+                </div>
+                <div className='button next' onClick={() => nextHandler()}>
+                  <div className=' button shadw'>{">"}</div>
+                </div>
+              </div>
+              <div className='background' ref={slider}>
+                <Image
+                  alt={"content"}
+                  src={store.data[store.number - 1].img[0]}
+                  width={200}
+                  height={200}
+                />
+                <Image
+                  alt={"content"}
+                  src={store.data[store.number - 1].img[1]}
+                  width={200}
+                  height={200}
+                />
+              </div>
             </div>
             <p>{store.data[store.number - 1].title}</p>
             <p>{store.data[store.number - 1].description}</p>

@@ -9,21 +9,21 @@ class ModalStore {
       title: "Классика",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adip",
-      img: ["/classic.webp", "/classic.webp"],
+      img: ["/classic.webp", "/call-background.jpg"],
     },
     {
       id: 1,
       title: "Под травертин",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adip",
-      img: ["/classic.webp", "/classic.webp"],
+      img: ["/travertin copy.jpeg", "/4.jpg"],
     },
     {
       id: 2,
       title: "3Д фактура",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adip",
-      img: ["/classic.webp", "/classic.webp"],
+      img: ["/3d.jpeg", "/3.jpg"],
     },
   ];
   constructor() {

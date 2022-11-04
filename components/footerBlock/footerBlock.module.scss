@@ -10,13 +10,13 @@
   justify-content: center;
   flex-wrap: wrap;
   transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
-  width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
   > div {
     width: 25%;
     height: 100%;
     padding: 10px 0 10px 0;
     transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
-    width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+      width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 
     h1 {
       font-size: 20px;
@@ -50,40 +50,19 @@
         width: 17px;
         height: 17px;
         margin-right: 7px;
-       transform: translateY(5px);
+        transform: translateY(5px);
       }
     }
   }
 
   transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
-  width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-
-  .pay {
-
-
-  }
-  .contacts {
-
-    .phone {
-
-    }
-    .mail {
-
-    }
-  }
-  .social {
-
-
-  }
-  .foot {
-
-  }
+    width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
-
 
 @media only screen and (max-width: 770px) {
   .root {
     width: 100%;
+    margin-top: 50px;
   }
 }
 

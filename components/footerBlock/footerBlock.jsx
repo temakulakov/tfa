@@ -58,6 +58,7 @@ const FooterBlock = () => {
         <h1>Контакты</h1>
         <div className={styles.phone}>
           <svg
+            style={{ transform: "translateY(-1.4px)" }}
             width='20'
             height='20'
             viewBox='0 0 20 20'
@@ -79,6 +80,7 @@ const FooterBlock = () => {
         </div>
         <div className={styles.phone}>
           <svg
+            style={{ transform: "translateY(-1.4px)" }}
             width='22'
             height='22'
             viewBox='0 0 22 22'

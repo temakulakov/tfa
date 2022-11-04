@@ -8,9 +8,12 @@
   max-height: 100px;
   margin: 0 auto 0 auto;
   transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
-  width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 
   .text {
+    p:first-child {
+      margin: 0;
+    }
     color: white;
     font-size: 18px;
     span {
@@ -26,10 +29,8 @@
       position: absolute;
       color: white;
       font-size: 14px;
-      transition: height 0.4s ease,
-      width 0.4s ease,
-      transform 0.4s ease,
-      font-size 0.4s ease;
+      transition: height 0.4s ease, width 0.4s ease, transform 0.4s ease,
+        font-size 0.4s ease;
     }
     input {
       z-index: 1;
@@ -42,7 +43,7 @@
       outline: none;
       background: transparent;
     }
-    input:focus ~ label{
+    input:focus ~ label {
       font-size: 12px;
       transform: translateY(-20px);
     }
