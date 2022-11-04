@@ -2,6 +2,7 @@ import styles from "./articleBlock.module.scss";
 import Card from "../card/card";
 import Button from "../Button/button";
 import Link from "next/link";
+import React from "react";
 
 const ArticleBlock = () => {
   return (
@@ -19,7 +20,6 @@ const ArticleBlock = () => {
             Какие материалы выбрать для облицовки дома
           </Card>
         </div>
-
         <Link href={"/articles"}>
           <Button styles={"articles"}>Все статьи</Button>
         </Link>
