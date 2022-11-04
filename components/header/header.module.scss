@@ -5,7 +5,7 @@
   margin-right: auto;
   padding-top: 10px;
   transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
-  width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    width 0.4s cubic-bezier(0.3, 1, 0.8, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@
     transition: width 0.5s;
   }
   a:hover {
-    color: #0285c4;
+    color: #0091cd;
     transition: width 0.5s;
     #rect {
       color: #036ea4;

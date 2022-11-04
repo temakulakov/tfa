@@ -48,13 +48,16 @@ const Modal = observer(() => {
               <input type='text' name='' required='' />
               <label>Ваша почта*</label>
             </div>
-            <button className='button button--atlas'>
+
+            <button
+              className='button button--atlas cups'
+              style={{ padding: "12px 48px 12px 48px" }}>
               <span>Отправить</span>
               <div
-                className='marquee'
+                className='marquee cupi'
                 aria-hidden='true'
                 style={{ background: "#0091CD" }}>
-                <div className='marquee__inner'>
+                <div className='marquee__inner cup'>
                   <span>Отправить</span>
                   <span>Отправить</span>
                   <span>Отправить</span>

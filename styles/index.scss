@@ -211,7 +211,7 @@ a {
   overflow: hidden;
   pointer-events: none;
   border-radius: 5px;
-  border: 1px solid white;
+  border: none;
   background: linear-gradient(
     55deg,
     rgba(254, 218, 117, 1) 0%,
@@ -274,7 +274,7 @@ a {
 
 .articles {
   background: rgba(255, 255, 255, 0.68);
-  border: 1px solid white;
+  border: none;
   transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
   span {
     display: inline-block;
@@ -418,6 +418,24 @@ a {
     }
   }
 }
+.cups {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.cup {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  > span {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
 .modal.active {
   opacity: 1;
   pointer-events: all;
@@ -476,7 +494,7 @@ a {
     .background {
       overflow-y: hidden;
       height: 100vw;
-
+      overflow-x: hidden;
       img {
         width: 99vw;
         height: 99vw;
