@@ -6,7 +6,11 @@ const StartBlock = (props) => {
   const image = "/starter-background.jpg";
   return (
     <>
-      <Parallax bgImage={image} strength={200} className={styles.root}>
+      <Parallax
+        placeholder={"blur"}
+        bgImage={image}
+        strength={200}
+        className={styles.root}>
         <div style={{ height: "600px" }}>
           <div className={styles.content}>
             <p>

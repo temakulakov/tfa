@@ -544,8 +544,6 @@ a {
         }
       }
     }
-    .close_modal {
-    }
     .background {
       overflow-y: hidden;
       height: 100vw;
@@ -557,3 +555,10 @@ a {
     }
   }
 }
+
+// *,
+// div,
+// button,
+// button::before {
+//   border-radius: 10px;
+// }
