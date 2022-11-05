@@ -352,8 +352,14 @@ a {
         backdrop-filter: blur(30px);
         transition: 0.5s all ease;
       }
+      .button.shadw:active {
+        opacity: 1;
+      }
       .button.shadw:hover {
         opacity: 1;
+      }
+      button.shadw:active {
+        opacity: 0;
       }
       .button.next {
         // transform: translateX(50vw);
@@ -425,6 +431,43 @@ a {
   align-self: center;
 }
 
+.close_modal {
+  position: absolute;
+  z-index: 111;
+  font-size: 35px;
+  //transform: translateX(280px) translateY(-330px);
+  transition: 0.5s all;
+  //border-radius: 90px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  cursor: pointer;
+  pointer-events: none;
+  > div {
+    transform: translate-x(40px);
+    padding: 0 10px 10px 10px;
+    //background-color: #0000007c;
+    border-radius: 30px;
+    height: 45px;
+    pointer-events: all;
+    transition: all 0.5s;
+    &:hover {
+      background-color: #000000;
+    }
+    > h1 {
+      height: 45px;
+      margin: 0;
+      text-shadow: 1px 10px 20px #000000, 1px 10px 20px #000000;
+    }
+  }
+}
+.close_modal:hover {
+  //background-color: #00000086;
+}
+
 .cup {
   height: 50px;
   display: flex;
@@ -488,8 +531,20 @@ a {
       height: 99vw;
       width: 98vw;
       .button {
-        height: 99vw;
+        transform: translateY(28vw) translateX(-1vw);
+        max-height: 10px;
+        max-width: 10px;
+        font-size: 20px;
+        .button.shadw {
+          opacity: 1;
+          background-color: rgba(0, 0, 0, 0.302);
+          height: 10px;
+          max-width: 10px;
+          border-radius: 90px;
+        }
       }
+    }
+    .close_modal {
     }
     .background {
       overflow-y: hidden;

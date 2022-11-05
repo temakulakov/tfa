@@ -19,12 +19,14 @@ const Modal = observer(() => {
     });
   };
   const slider = useRef(null);
+  const modalRef = useRef(null);
   return (
     <div
       className={store.modal ? `modal active ` : "modal"}
       onClick={() => {
         store.setModal(0);
-      }}>
+      }}
+      ref={modalRef}>
       <div
         className={
           store.modal
@@ -32,6 +34,11 @@ const Modal = observer(() => {
             : "modal content"
         }
         onClick={(e) => e.stopPropagation()}>
+        <div className='close_modal'>
+          <div onClick={() => store.setModal(0)}>
+            <h1>✕</h1>
+          </div>
+        </div>
         {store.modal == 1 ? (
           <>
             <p>Закажите фасад для своего дома</p>
