@@ -14,8 +14,17 @@ import { observer } from "mobx-react-lite";
 import store from "../store/store";
 
 const Home = () => {
+  const escHandler = (event) => {
+    event.key === "Escape" ? store.setModal(0) : null;
+    event.key === "Enter" ? store.setModal(0) : null;
+    event.key === "Backspace" ? store.setModal(0) : null;
+  };
+
   const [more, setMore] = useState(false);
   const h2ref = useRef(null);
+  useEffect(() => {
+    document.addEventListener("keydown", escHandler);
+  }, []);
   useEffect(() => {
     if (more == true) {
       h2ref.current.scrollIntoView();

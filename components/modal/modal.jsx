@@ -11,6 +11,7 @@ const Modal = observer(() => {
         : "";
     });
   };
+
   const nextHandler = () => {
     slider.current.childNodes.forEach((element, index) => {
       index != 0 && index != 3
