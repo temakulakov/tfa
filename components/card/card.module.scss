@@ -21,6 +21,9 @@ $Y: -50px;
   transition: height 0.4s cubic-bezier(0.3, 1, 0.8, 1),
     width 0.4s cubic-bezier(0.3, 1, 0.8, 1),
     transform 0.35s cubic-bezier(0.3, 1, 0.8, 1);
+  > img {
+    border-radius: 3px;
+  }
   p {
     position: absolute;
     font-size: 120%;

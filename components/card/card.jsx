@@ -15,6 +15,8 @@ const Card = (props) => {
             alt={"props.children"}
             width={300}
             height={300}
+            layout={"fill"}
+            objectFit={"cover"}
           />
           <div
             className={styles.shadow}

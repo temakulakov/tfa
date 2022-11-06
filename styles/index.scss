@@ -505,6 +505,7 @@ a {
     height: 500px;
     width: 500px;
     display: flex;
+
     align-items: center;
     justify-content: space-between;
     .button {
@@ -513,6 +514,7 @@ a {
   }
   img {
     width: 100%;
+
     max-width: 1500px;
     max-height: 500px;
   }
