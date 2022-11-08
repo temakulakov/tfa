@@ -9,15 +9,21 @@ import FooterBlock from "../components/footerBlock/footerBlock";
 import SenderBlock from "../components/senderBlock/senderBlock";
 import Modal from "../components/modal/modal";
 import Head from "next/head";
-import { useLayoutEffect, useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import store from "../store/store";
 
+
 const Home = () => {
+
+
   const escHandler = (event) => {
     event.key === "Escape" ? store.setModal(0) : null;
     event.key === "Enter" ? store.setModal(0) : null;
-    event.key === "Backspace" ? store.setModal(0) : null;
+
+    if (store.modal != 1) {
+      event.key === " " ? store.setModal(0) : null;
+      event.key === "Backspace" ? store.setModal(0) : null;}
   };
 
   const [more, setMore] = useState(false);
@@ -31,6 +37,7 @@ const Home = () => {
       setMore(false);
     }
   }, [more]);
+
   return (
     <>
       <div
@@ -42,7 +49,7 @@ const Home = () => {
         </Head>
         <Header />
         <StartBlock more={more} setMore={setMore} />
-        <ProductBlock />
+        <ProductBlock/>
         <CallBlock h2ref={h2ref} />
         <ArticleBlock />
         {/*<CalcBlock/>*/}
@@ -50,7 +57,7 @@ const Home = () => {
         <SenderBlock />
         <FooterBlock />
       </div>
-      <Modal></Modal>
+      <Modal />
     </>
   );
 };

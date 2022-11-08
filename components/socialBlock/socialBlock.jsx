@@ -9,7 +9,7 @@ const SocialBlock = () => {
       <h1>Мы в социальных сетях</h1>
       <div className={styles.grid}>
         <div className={styles.height}>
-          <Photo img={"/starter-background.jpg"} width={200} height={100} />
+          <Photo img={"/starter-background.jpg"} width={200} height={200} />
         </div>
         <div className={styles.two}>
           <Photo img={"/1.jpg"} width={200} height={100} />

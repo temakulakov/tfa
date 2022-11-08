@@ -23,12 +23,14 @@ const Modal = observer(() => {
   const modalRef = useRef(null);
   return (
     <div
+      style={{ overflowX: "visible", overflowY: "visible" }}
       className={store.modal ? `modal active ` : "modal"}
       onClick={() => {
         store.setModal(0);
       }}
       ref={modalRef}>
       <div
+        style={{ overflowX: "visible", overflowY: "visible" }}
         className={
           store.modal
             ? `modal active content ${store.modal == 2 ? "card" : ""}`

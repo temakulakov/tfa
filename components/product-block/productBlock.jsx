@@ -8,6 +8,7 @@ const ProductBlock = () => {
       <h1 className={styles.head}>Примеры фактур</h1>
       <div className={styles.root}>
         <div id={"scroller"} className={styles.content}>
+
           <Card
             id={0}
             onClick={() => {

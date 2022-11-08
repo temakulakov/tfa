@@ -7,8 +7,7 @@ const Photo = (props) => {
     <div className={styles.root}>
       <Link href='https://instagram.com'>
         <Image
-          style={{ height: "100%", width: "100%", overflow: "hidden" }}
-          layout='cover'
+          style={{ height: "100%", width: "100%", overflow: "hidden"}}
           src={props.img}
           alt={props.img}
           width={props.width}

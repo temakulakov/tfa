@@ -56,7 +56,7 @@ const Header = () => {
         Товары
       </Link>
       <Link href={"#"} style={{ order: "5" }}>
-        Аккаунт
+        О нас
       </Link>
     </div>
   );

@@ -1,8 +1,12 @@
 import { makeAutoObservable } from "mobx";
 
+
 class ModalStore {
   modal = 0;
   number = 1;
+  textName = "";
+  textNumber = "";
+  textEmail = "";
   data = [
     {
       id: 0,
@@ -35,10 +39,12 @@ class ModalStore {
   }
 
   setModal(props) {
+
     this.modal = props;
     this.modal
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "scroll");
+    this.modal
   }
 }
 
